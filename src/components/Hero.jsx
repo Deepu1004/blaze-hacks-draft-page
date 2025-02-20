@@ -1,6 +1,7 @@
 import React from "react";
 import image from '../public/hero.jpeg';
 import "./css/Hero.css";
+import { MapPin, Calendar } from "lucide-react"; 
 
 function Hero() {
   return (
@@ -8,8 +9,14 @@ function Hero() {
       <img src={image} />
       <p>Ignite Your Innovation</p>
       <p>36 Hours of Coding, Creating, and Collaborating</p>
-      <p>Date: June 6th &7th</p>
-      <p>Place: IARE Campus</p>
+      <div className="event-details">
+        <p>
+          <Calendar size={20} className="icon" /> June 6th & 7th, 2025
+        </p>
+        <p>
+          <MapPin size={20} className="icon" /> IARE Campus, Hyderabad
+        </p>
+      </div>
     </section>
   );
 }

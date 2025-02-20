@@ -1,10 +1,20 @@
 import React from "react";
-import "./css/Team.css"; // Make sure the path is correct
-import male from "../public/male.png.jpg"; // Use assets folder
-import female from "../public/female.png.jpg"; // Use assets folder
+import "./css/Team.css";
+import male from "../public/male.png.jpg";
+import female from "../public/female.png.jpg";
 
 function TeamSection() {
   const teamMembers = [
+    {
+      name: "Karthik V",
+      role: "Organiser",
+      image: male,
+    },
+    {
+      name: "Richard Abhisai",
+      role: "Co-Oraganizer",
+      image: male,
+    },
     {
       name: "Shiva Mani",
       role: "Tech Head",

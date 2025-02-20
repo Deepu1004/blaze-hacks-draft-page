@@ -1,4 +1,4 @@
-/* Team.css */
+
 .team {
     min-height: 100vh;
     padding: 8rem 2rem;
@@ -96,7 +96,6 @@
     transition: transform 0.4s ease;
 }
 
-/*Added*/
 .team-member:hover .image-container img {
     transform: scale(1.1);
 }

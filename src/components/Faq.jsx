@@ -48,9 +48,9 @@ function FaqSection() {
   ];
   const toggleAccordion = (index) => {
     if (activeFaq === index) {
-      setActiveFaq(null); // Close if already open
+      setActiveFaq(null); 
     } else {
-      setActiveFaq(index); // Open the clicked one
+      setActiveFaq(index); 
     }
   };
 
@@ -67,7 +67,7 @@ function FaqSection() {
             onClick={() => toggleAccordion(index)}
           >
             {" "}
-            {/* Use the wrapper here */}
+
             <div className="faq-question">{faq.question}</div>
           </div>
           <div className="faq-answer">{faq.answer}</div>

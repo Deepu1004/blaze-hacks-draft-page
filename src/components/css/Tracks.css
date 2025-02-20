@@ -1,5 +1,3 @@
-/* src/components/Tracks/Tracks.css */
-
 .tracks {
     min-height: 100vh;
     padding: 8rem 2rem;
@@ -87,17 +85,15 @@
     position: relative;
 }
 
-/* Styles for the countdown within the Tracks section */
 .countdown {
     text-align: center;
     margin-top: 2rem;
-    /* Add some space above the countdown */
 }
 
 .countdown h3 {
     font-size: 1.5rem;
     color: #ff4d00;
-    /* Or your desired color */
+    margin-top: 70px;
     margin-bottom: 0.5rem;
 }
 

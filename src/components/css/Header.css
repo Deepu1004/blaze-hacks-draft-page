@@ -1,4 +1,4 @@
-/* Header.css */
+
 .header {
     position: fixed;
     top: 0;
@@ -33,7 +33,6 @@
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
     text-decoration: none;
-    /* Remove underline */
 }
 
 .logo:hover {

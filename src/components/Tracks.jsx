@@ -9,7 +9,6 @@ function TracksSection() {
     const now = new Date().getTime();
     const difference = eventDate - now;
 
-    // Handle the case where the event date is in the past
     if (difference < 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }

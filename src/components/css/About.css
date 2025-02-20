@@ -1,4 +1,4 @@
-/* About.css */
+
 .about {
     min-height: 100vh;
     display: flex;
@@ -27,6 +27,8 @@
 }
 
 .about-image img {
+    margin: 20px;
+    margin-top: 50px;    
     width: 100%;
     height: auto;
     border-radius: 20px;

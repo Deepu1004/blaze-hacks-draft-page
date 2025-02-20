@@ -1,11 +1,9 @@
-/* FAQ.css */
+
 .faq {
     min-height: 100vh;
     padding: 8rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: linear-gradient(135deg, #fff5f2 0%, #fff 100%); */
-    /* Optional background */
 }
 
 .faq h2 {
@@ -32,7 +30,6 @@
 
 .faq-item {
     margin-bottom: 2rem;
-    /* cursor: pointer;  Removed cursor from the entire item */
 }
 
 .faq-question-wrapper {
@@ -40,7 +37,6 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    /* Add cursor to the wrapper */
 }
 
 .faq-question {
@@ -86,13 +82,11 @@
     border-radius: 15px;
     margin-top: 1rem;
     display: none;
-    /* Initially hidden */
     color: #555;
     line-height: 1.8;
     box-shadow: 0 10px 20px rgba(255, 77, 0, 0.05);
     width: 90%;
     margin-left: auto;
-    /* Center horizontally */
     margin-right: auto;
 }
 

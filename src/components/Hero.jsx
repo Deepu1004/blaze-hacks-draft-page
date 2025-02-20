@@ -7,7 +7,9 @@ function Hero() {
     <section id="home" className="hero">
       <img src={image} />
       <p>Ignite Your Innovation</p>
-      <p>24 Hours of Coding, Creating, and Collaborating</p>
+      <p>36 Hours of Coding, Creating, and Collaborating</p>
+      <p>Date: June 6th &7th</p>
+      <p>Place: IARE Campus</p>
     </section>
   );
 }

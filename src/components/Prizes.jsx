@@ -35,7 +35,7 @@ function Prizes() {
 
   return (
     <>
-      {/* Prizes Section */}
+
       <section id="prizes" className="prizes">
         <h2>Prizes</h2>
         <h3>$5,000 in Total Prizes</h3>
@@ -49,12 +49,10 @@ function Prizes() {
         <h2>Sponsors</h2>
         <div className="image-grid">
           <img src={mlh} alt="MLH Logo" />
-          <img src={tbh} alt="TBH Logo" />
         </div>
 
         <h3>Swag Sponsors</h3>
         <div className="image-grid">
-          <img src={tbh} alt="TBH Logo" />
         </div>
 
         <h3>Category Sponsors </h3>

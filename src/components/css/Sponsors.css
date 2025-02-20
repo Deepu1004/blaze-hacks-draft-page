@@ -1,4 +1,4 @@
-/* Sponsors.css */
+
 .sponsors {
     text-align: center;
     background: linear-gradient(135deg, #fff 0%, #fff5f2 100%);
@@ -21,7 +21,6 @@
 }
 
 .sponsors h2::after {
-    /* Added missing after styles*/
     content: '';
     position: absolute;
     bottom: -15px;

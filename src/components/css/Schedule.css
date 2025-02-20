@@ -1,0 +1,81 @@
+/* Schedule.css */
+.schedule {
+    min-height: 100vh;
+    padding: 8rem 2rem;
+    background: linear-gradient(135deg, #fff 0%, #fff5f2 100%);
+    position: relative;
+}
+
+.schedule h2 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.schedule h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    border-radius: 2px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.schedule-day {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(255, 77, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule-day::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(to bottom, #ff4d00, #ff8700);
+    transition: height 0.4s ease;
+}
+
+.schedule-day:hover::before {
+    height: 100%;
+}
+
+.schedule-day:hover {
+    transform: translateX(10px);
+    box-shadow: 0 30px 60px rgba(255, 77, 0, 0.12);
+}
+
+.schedule-day h3 {
+    font-size: 1.8rem;
+    color: #ff4d00;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-day p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 1rem auto;
+    line-height: 1.8;
+}

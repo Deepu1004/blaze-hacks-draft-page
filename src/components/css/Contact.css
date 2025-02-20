@@ -1,0 +1,67 @@
+/* Contact.css */
+.contact {
+    padding: 8rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5f2 0%, #fff 100%);
+    position: relative;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    border-radius: 2px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #ff4d00;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(255, 77, 0, 0.12);
+}
+
+.contact-link svg {
+    color: #ff4d00;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover svg {
+    transform: scale(1.2);
+}

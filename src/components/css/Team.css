@@ -1,0 +1,115 @@
+/* Team.css */
+.team {
+    min-height: 100vh;
+    padding: 8rem 2rem;
+    background: linear-gradient(135deg, #fff 0%, #fff5f2 100%);
+    position: relative;
+}
+
+.team h2 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.team h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    border-radius: 2px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    transition: all 0.4s ease;
+    padding: 2rem;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(255, 77, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 77, 0, 0.05), rgba(255, 135, 0, 0.05));
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px rgba(255, 77, 0, 0.12);
+}
+
+.team-member:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.image-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.1);
+    border: 4px solid white;
+    transition: border-color 0.4s ease, transform 0.4s ease;
+}
+
+.team-member:hover .image-container {
+    border-color: #ff4d00;
+    transform: scale(1.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/*Added*/
+.team-member:hover .image-container img {
+    transform: scale(1.1);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #ff4d00;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}

@@ -1,0 +1,114 @@
+/* FAQ.css */
+.faq {
+    min-height: 100vh;
+    padding: 8rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background: linear-gradient(135deg, #fff5f2 0%, #fff 100%); */
+    /* Optional background */
+}
+
+.faq h2 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.faq h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    border-radius: 2px;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+    /* cursor: pointer;  Removed cursor from the entire item */
+}
+
+.faq-question-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    /* Add cursor to the wrapper */
+}
+
+.faq-question {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.05);
+    position: relative;
+    width: 100%;
+    /* Ensure full width */
+    /* Removed cursor: pointer from here */
+
+}
+
+.faq-question::after {
+    content: '\25BC';
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: 0.5rem;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
+}
+
+.faq-question:hover {
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    color: white;
+    transform: translateX(10px);
+}
+
+.faq-question:hover::after {
+    color: white;
+}
+
+.faq-answer {
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    display: none;
+    /* Initially hidden */
+    color: #555;
+    line-height: 1.8;
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.05);
+    width: 90%;
+    margin-left: auto;
+    /* Center horizontally */
+    margin-right: auto;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

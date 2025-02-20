@@ -1,0 +1,85 @@
+/* Sponsors.css */
+.sponsors {
+    text-align: center;
+    background: linear-gradient(135deg, #fff 0%, #fff5f2 100%);
+    padding: 8rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.sponsors h2 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.sponsors h2::after {
+    /* Added missing after styles*/
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    border-radius: 2px;
+}
+
+.sponsors h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    border-radius: 2px;
+}
+
+.sponsors h3 {
+    font-size: 2.2rem;
+    background: linear-gradient(45deg, #ff4d00, #ff8700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3rem 0 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.sponsors .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sponsors .image-grid img {
+    max-width: 300px;
+    height: auto;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 10px 20px rgba(255, 77, 0, 0.1));
+    margin: 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(255, 77, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.sponsors .image-grid img:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 15px 30px rgba(255, 77, 0, 0.15));
+    box-shadow: 0 20px 40px rgba(255, 77, 0, 0.12);
+}

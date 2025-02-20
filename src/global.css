@@ -1,0 +1,14 @@
+/* global.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #ffebe6 0%, #fff1e6 100%);
+    font-family: 'Poppins';
+    min-height: 100vh;
+    color: #333;
+}

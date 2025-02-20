@@ -7,8 +7,10 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <img src={image} />
-      <p>Ignite Your Innovation</p>
-      <p>36 Hours of Coding, Creating, and Collaborating</p>
+      <p className="tagline">Ignite Your Innovation</p>
+      <p className="description">
+        36 Hours of Coding, Creating, and Collaborating
+      </p>
       <div className="event-details">
         <p>
           <Calendar size={20} className="icon" /> June 6th & 7th, 2025

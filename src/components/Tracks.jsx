@@ -5,7 +5,7 @@ function TracksSection() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
   function getTimeLeft() {
-    const eventDate = new Date("February 22, 2025 00:00:00").getTime();
+    const eventDate = new Date("June 6, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const difference = eventDate - now;
 
@@ -84,8 +84,8 @@ function TracksSection() {
       <div className="countdown">
         <h3>Hackathon Begins In</h3>
         <p>
-          {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
-          {timeLeft.seconds}s
+          {timeLeft.days}D {timeLeft.hours}H {timeLeft.minutes}M {" "}
+          {timeLeft.seconds}S
         </p>
       </div>
     </section>

@@ -35,13 +35,12 @@ function Prizes() {
 
   return (
     <>
-
       <section id="prizes" className="prizes">
         <h2>Prizes</h2>
-        <h3>$5,000 in Total Prizes</h3>
-        <p>First Place: $2,500</p>
-        <p>Second Place: $1,500</p>
-        <p>Third Place: $1,000</p>
+        <h3>$50,000 in Total Prizes</h3>
+        <p>First Place: $25,000</p>
+        <p>Second Place: $15,000</p>
+        <p>Third Place: $10,000</p>
       </section>
 
       {/* Sponsors Section */}
@@ -52,8 +51,7 @@ function Prizes() {
         </div>
 
         <h3>Swag Sponsors</h3>
-        <div className="image-grid">
-        </div>
+        <div className="image-grid"></div>
 
         <h3>Category Sponsors </h3>
         <h4>Brought to you by</h4>

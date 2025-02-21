@@ -13,7 +13,7 @@ function Hero() {
       </p>
       <div className="event-details">
         <p>
-          <Calendar size={20} className="icon" /> June 6th & 7th, 2025
+          <Calendar size={20} className="icon" /> June 7th & 8th, 2025
         </p>
         <p>
           <MapPin size={20} className="icon" /> IARE Campus, Hyderabad

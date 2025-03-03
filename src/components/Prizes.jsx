@@ -37,10 +37,10 @@ function Prizes() {
     <>
       <section id="prizes" className="prizes">
         <h2>Prizes</h2>
-        <h3>$50,000 in Total Prizes</h3>
-        <p>First Place: $25,000</p>
-        <p>Second Place: $15,000</p>
-        <p>Third Place: $10,000</p>
+        <h3>₹50,000 in Total Prizes</h3>
+        <p>First Place: ₹25,000</p>
+        <p>Second Place: ₹15,000</p>
+        <p>Third Place: ₹10,000</p>
       </section>
 
       {/* Sponsors Section */}

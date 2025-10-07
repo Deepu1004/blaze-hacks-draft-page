@@ -1,7 +1,7 @@
 /* Header Styling */
 .header {
     position: fixed;
-    top: 0;
+    top: 5%;
     left: 10%;
     right: 10%;
     padding: 1rem 2rem;

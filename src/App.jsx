@@ -1,27 +1,26 @@
-import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Tracks from "./components/Tracks";
-import Schedule from "./components/Schedule";
-import Prizes from "./components/Prizes";
-import Faq from "./components/Faq";
-import Team from "./components/Team";
-import Contact from "./components/Contact";
+import React from 'react';
+import Layout from './components/Layout';
+import Hero from './components/Hero';
+import AboutSection from './components/About';
+import TracksSection from './components/Tracks';
+import ScheduleSection from './components/Schedule';
+import Prizes from './components/Prizes';
+import TeamSection from './components/Team';
+import FaqSection from './components/Faq';
+import ContactSection from './components/Contact';
 
 function App() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <Hero />
-      <About />
-      <Tracks />
-      <Schedule />
+      <AboutSection />
+      <TracksSection />
+      <ScheduleSection />
       <Prizes />
-      <Faq />
-      <Team />
-      <Contact />
-    </div>
+      <TeamSection />
+      <FaqSection />
+      <ContactSection />
+    </Layout>
   );
 }
 

@@ -1,0 +1,55 @@
+.cancellation-banner {
+  background-color: #d93025; /* Strong red */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  position: fixed; /* Keep it at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000; /* Ensure it's above everything, including the header */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #fff3;
+}
+
+.banner-icon {
+  margin-right: 1rem;
+  min-width: 24px;
+}
+
+.banner-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.banner-text strong {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+/* Adjust main content padding to prevent overlap */
+body {
+  padding-top: 60px; /* Adjust this value based on the banner's final height */
+}
+
+@media (max-width: 768px) {
+  .cancellation-banner {
+    padding: 0.8rem;
+    flex-direction: column;
+  }
+  .banner-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .banner-text {
+    font-size: 0.9rem;
+  }
+  body {
+    padding-top: 80px; /* Taller banner on mobile */
+  }
+}
